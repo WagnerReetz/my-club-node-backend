@@ -28,7 +28,8 @@ api.post = (req, res, next) => {
     const schedule = new schedules({
         _id: new mongoose.Types.ObjectId(),
         name: req.body.name,
-        dateAndTime: req.body.dateAndTime,
+        dateBegin: req.body.dateBegin,
+        dateEnd: req.body.dateEnd,
         users: req.body.users
     });
 
