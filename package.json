@@ -2,7 +2,7 @@
   "name": "my-club",
   "version": "1.0.0",
   "description": "Aplicativo para gerenciamento de atividades esportivas em clubes",
-  "main": "index.js",
+  "main": "bin/www",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
@@ -16,6 +16,10 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.10",
     "morgan": "^1.10.0"
