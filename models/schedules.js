@@ -6,8 +6,11 @@ const schedulesSchema = mongoose.Schema({
     dateBegin: Date,
     dateEnd: Date,
     users: [
-        {type: mongoose.Schema.Types.ObjectId, ref: 'users'}
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Users'
+        }
     ]
 });
 
-module.exports = mongoose.model('schedules', schedulesSchema);
+module.exports = mongoose.model('Schedules', schedulesSchema);
