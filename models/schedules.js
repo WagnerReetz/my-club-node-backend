@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const schedulesSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
@@ -11,6 +11,6 @@ const schedulesSchema = mongoose.Schema({
             ref: 'Users'
         }
     ]
-})
+});
 
-module.exports = mongoose.model('Schedules', schedulesSchema)
+module.exports = mongoose.model('Schedules', schedulesSchema);
